@@ -1,0 +1,163 @@
+/* dashboard-styles.css */
+
+.root-pane {
+    -fx-background-color: #2dd4bf;
+}
+
+/* Barra lateral */
+.sidebar {
+    -fx-background-color: #666666;
+    -fx-min-width: 60px;
+    -fx-max-width: 60px;
+}
+
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-max-width: 40px;
+    -fx-max-height: 40px;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-button-active {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+.icon-label {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+/* Contenido principal */
+.main-content {
+    -fx-background-color: #2dd4bf;
+}
+
+/* Barra superior */
+.top-bar {
+    -fx-padding: 0 0 10 0;
+}
+
+.period-button {
+    -fx-background-color: #a7d8d8;
+    -fx-text-fill: #333333;
+    -fx-background-radius: 15;
+    -fx-border-color: #999999;
+    -fx-border-radius: 15;
+    -fx-border-width: 1;
+    -fx-padding: 8 16 8 16;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.period-button:selected {
+    -fx-background-color: #14b8a6;
+    -fx-text-fill: white;
+    -fx-border-color: #14b8a6;
+}
+
+.period-button:hover {
+    -fx-background-color: #6dd5d0;
+}
+
+/* Panel de gráficos */
+.chart-panel {
+    -fx-background-color: #a7d8d8;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);
+}
+
+.chart-title {
+    -fx-text-fill: #333333;
+    -fx-alignment: center;
+}
+
+.pie-chart {
+    -fx-background-color: transparent;
+}
+
+.line-chart {
+    -fx-background-color: transparent;
+}
+
+/* Botones de navegación */
+.nav-button {
+    -fx-background-color: #a7d8d8;
+    -fx-border-color: #999999;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-min-width: 50px;
+    -fx-min-height: 40px;
+    -fx-cursor: hand;
+}
+
+.nav-button:hover {
+    -fx-background-color: #8cc5c5;
+}
+
+.nav-icon {
+    -fx-text-fill: #333333;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+/* Título de categorías */
+.categories-title {
+    -fx-text-fill: #333333;
+    -fx-alignment: center;
+}
+
+/* Panel de categorías */
+.categories-panel {
+    -fx-background-color: #a7d8d8;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);
+}
+
+.category-item {
+    -fx-text-fill: #333333;
+    -fx-font-size: 14px;
+    -fx-padding: 5 0 5 0;
+    -fx-cursor: hand;
+}
+
+.category-item:hover {
+    -fx-text-fill: #14b8a6;
+    -fx-font-weight: bold;
+}
+
+/* Botón descargar */
+.download-button {
+    -fx-background-color: #a7d8d8;
+    -fx-text-fill: #333333;
+    -fx-background-radius: 8;
+    -fx-border-color: #999999;
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+    -fx-padding: 10 20 10 20;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.download-button:hover {
+    -fx-background-color: #8cc5c5;
+}
+
+/* Personalización de gráficos */
+.chart-pie-label {
+    -fx-font-size: 11px;
+}
+
+.default-color0.chart-pie { -fx-pie-color: #8b5cf6; }
+.default-color1.chart-pie { -fx-pie-color: #06b6d4; }
+.default-color2.chart-pie { -fx-pie-color: #10b981; }
+.default-color3.chart-pie { -fx-pie-color: #f59e0b; }
+.default-color4.chart-pie { -fx-pie-color: #ef4444; }

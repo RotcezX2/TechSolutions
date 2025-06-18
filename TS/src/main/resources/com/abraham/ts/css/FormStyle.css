@@ -1,0 +1,59 @@
+/* login-styles.css */
+
+.root-pane {
+    -fx-background-color: #ffffff;
+}
+
+.login-panel {
+    -fx-background-color: #a7d8d8;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 15, 0, 0, 5);
+}
+
+.title-label {
+    -fx-text-fill: #333333;
+}
+
+.subtitle-label {
+    -fx-text-fill: #666666;
+}
+
+.field-label {
+    -fx-text-fill: #333333;
+}
+
+.input-field {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5;
+    -fx-padding: 10;
+}
+
+.input-field:focused {
+    -fx-border-color: #2dd4bf;
+    -fx-border-width: 2;
+}
+
+.login-button {
+    -fx-background-color: #2dd4bf;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.login-button:hover {
+    -fx-background-color: #14b8a6;
+}
+
+.login-button:pressed {
+    -fx-background-color: #0d9488;
+}
+
+.register-link {
+    -fx-text-fill: #666666;
+}
+
+.register-link:hover {
+    -fx-text-fill: #333333;
+}

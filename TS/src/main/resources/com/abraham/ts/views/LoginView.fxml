@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<StackPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.abraham.ts.controllers.LoginController" >
+    <stylesheets>
+        <URL value="@../css/FormStyle.css" />
+    </stylesheets>
+    <children>
+        <VBox alignment="CENTER" maxHeight="500.0" maxWidth="400.0" spacing="20.0" styleClass="login-panel">
+            <children>
+                <Label styleClass="title-label" text="Inicio de sesión">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label styleClass="subtitle-label" text="Ingrese con su usuario y contraseña.">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <VBox spacing="8.0">
+                    <children>
+                        <Label styleClass="field-label" text="Usuario">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="userField" prefHeight="40.0" promptText="user1234" styleClass="input-field" />
+                    </children>
+                </VBox>
+                <VBox spacing="8.0">
+                    <children>
+                        <Label styleClass="field-label" text="Contraseña">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <PasswordField fx:id="passwordField" prefHeight="40.0" promptText="Introduce acá tu contraseña" styleClass="input-field" />
+                    </children>
+                </VBox>
+                <Button fx:id="loginButton" mnemonicParsing="false" onAction="#handleLogin" prefHeight="45.0" prefWidth="300.0" styleClass="login-button" text="Inicia Sesión">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Hyperlink fx:id="registerLink" styleClass="register-link" text="¿No tienes cuenta? Regístrate">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                </Hyperlink>
+            </children>
+            <padding>
+                <Insets left="40.0" right="40.0" top="40.0" />
+            </padding>
+        </VBox>
+    </children>
+    <styleClass>
+        <String fx:value="root-pane" />
+    </styleClass>
+</StackPane>
